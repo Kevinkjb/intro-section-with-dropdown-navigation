@@ -8,4 +8,5 @@ Thanks for checking out this front-end coding challenge I made.
 
 
 **Thank you have fun!** 🚀
+![Preview Image](image.png)
 
