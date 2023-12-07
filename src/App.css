@@ -2,6 +2,8 @@
 body{
     font-family: 'Epilogue', sans-serif;
     background-color: hsl(0, 0%, 98%);
+    width: 1440px;
+    margin: 0 auto;
 }
 .main-nav{
     display: flex;
