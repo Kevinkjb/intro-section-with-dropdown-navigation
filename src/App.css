@@ -1,38 +1,179 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+body{
+    font-family: 'Epilogue', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3.5rem;
+}
+.brand{
+    font-size: 2rem;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.nav-list li{
+    margin: 0 1.5rem;
+    color: hsl(0, 0%, 41%);
+    font-size: 13px;
+    cursor: pointer;
+}
+li:hover{
+    color: hsl(0, 0%, 8%);
+}
+.dropdown{
+    display: flex;
+    align-items: center;
+}
+.dropdown-icon{
+    width: 11px;
+    height: 7px;
+    margin-left: 8px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav{
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+}
+.nav-btn{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+.nav-btn button{
+    margin-right: 1.5rem;
+}
+.btn{
+    height: 2.2rem;
+    width: 5.5rem;
+    background-color: hsl(0, 0%, 98%);
+    border: none;
+    color: hsl(0, 0%, 41%);
+    font-size: 13px;
+}
+.btn:hover{
+    border-radius: 12px;
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+.register{
+    border: 1px solid hsl(0, 0%, 41%);
+    border-radius: 12px;
+}
+.register:hover{
+    color: #000;
+    border: 1px solid hsl(0, 0%, 8%);
+}
+.features{
+    font-size: 12px;
+    position: relative;
+    right: 31rem;
+    top: 1.5rem;
+
+}
+.company{
+    font-size: 13px;
+    position: relative;
+    top: 1.5rem;
+    right: 19rem;
+}
+.company-container{
+    position: absolute;
+    padding: 13px;
+    width: 6rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    background-color: #fff;
+    color: hsl(0, 0%, 41%);
+    
+}
+.company-box{
+    width: 4rem;
+    margin: 0 auto;
+}
+.features-container{
+    position: absolute;
+    padding: 13px;
+    width: 8rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    background-color: #fff;
+
+
+}
+.icon{
+    width: 13px;
+    padding-right: 13px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.box{
+    display: flex;
+    align-items: center;
+    width: 6rem;
+    height: 2rem;
+    margin: 0 auto;
+    color: hsl(0, 0%, 41%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Home Page */
+.home-one{
+    width: 30rem;
+}
+.header{
+    font-size: 4.5rem;
+}
+.home-text{
+    font-size: 18px;
+    width: 30rem;
+    color: hsl(0, 0%, 41%);
+    line-height: 1.5;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6rem;
+}
+.sponsors{
+    width: 4.5rem;
+    height: 100%;
+}
+.learn-more{
+    background-color: hsl(0, 0%, 8%);
+    color: #fff;
+    height: 2.5rem;
+    width: 8rem;
+    border-radius: 12px;
+    border: none;
+    font-weight: 600;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease-out;
+    border: 1px solid hsl(0, 0%, 8%);
+    margin-top: 3rem;
+}
+.learn-more:hover{
+    border: 1px solid hsl(0, 0%, 8%);
+    background-color: #fff;
+    color: #000;
+
+}
+.main-hero{
+    display: flex;
+    padding: 3rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero--img{
+    width: 28rem;
+    height: 35rem;
 }
