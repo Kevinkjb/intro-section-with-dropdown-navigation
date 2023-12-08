@@ -5,8 +5,11 @@
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge I made.
+Currently it's not responsive yet. Will work on it! 😊
 
 
 **Thank you have fun!** 🚀
+
+
 ![Preview Image](image.png)
 
