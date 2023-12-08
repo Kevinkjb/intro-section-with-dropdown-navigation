@@ -72,19 +72,23 @@ const NavBar = () =>{
     const [featuresDropDown, setFeaturesDropDown] = useState(false);
     const [companyDropDown, setcompanyDropDown] = useState(false);
     const [menuToggle, setmenuToggle] = useState(false)
+
     return(
         <nav className="main-nav">
             <div className='nav-container'>
+
                 <div className="nav">
-                    <h1 className='brand'>snap</h1>
+                <h1 className='brand'>snap</h1>   
                     <ul className={menuToggle ? 'nav-list active' : 'nav-list'}>
                         <li className='dropdown' onClick={() => setFeaturesDropDown(!featuresDropDown)}>Features <img className='dropdown-icon' src={!featuresDropDown ? arrowDown : arrowUp} alt="dropdown"/></li>
                         <li className='dropdown' onClick={() => setcompanyDropDown(!companyDropDown)}>Company <img className='dropdown-icon' src={!companyDropDown ? arrowDown : arrowUp} alt="dropdown"/></li>
                         <li>Careers</li>
                         <li>About</li>
                     </ul>
+
                     <FeaturesToggle featuresDropDown={featuresDropDown}/>
                     <CompanyToggle companyDropDown={companyDropDown}/>
+
                 </div>
             
                 <div className="nav-btn">
@@ -92,7 +96,7 @@ const NavBar = () =>{
                     <button className="btn register">Register</button>
                 </div>
                 <div className='menu'> 
-                    <img className='burger' onClick={() => setmenuToggle(!menuToggle)} src={menuToggle ? close : menu} alt='menu'/>
+                    <img className='burger' onClick={() => setmenuToggle(!menuToggle )} src={menuToggle ? close : menu} alt='menu'/>
                 </div>
             </div>
 

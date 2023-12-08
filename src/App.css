@@ -23,12 +23,14 @@ body{
     display: flex;
     align-items: center;
     list-style: none;
+    justify-content: space-between;
 }
 .nav-list li{
     margin: 0 1.5rem;
     color: hsl(0, 0%, 41%);
     font-size: 13px;
     cursor: pointer;
+
 }
 li:hover{
     color: hsl(0, 0%, 8%);
@@ -46,7 +48,7 @@ li:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 90rem;
     max-width: 90rem;
     margin: 0 auto;
 }
@@ -58,8 +60,8 @@ li:hover{
 .nav-btn{
     display: flex;
     align-items: center;
-    margin-right: 2rem;
 }
+
 .nav-btn button{
     margin-right: 1.5rem;
 }
@@ -79,6 +81,7 @@ li:hover{
     font-size: 13px;
     font-weight: bold;
 }
+
 .btn:hover{
     border-radius: 12px;
     color: hsl(0, 0%, 8%);
@@ -92,12 +95,7 @@ li:hover{
     color: #000;
     border: 1px solid hsl(0, 0%, 8%);
 }
-.features{
-    font-size: 12px;
-    position: relative;
-    right: 28.5rem;
-    top: 1.5rem;
-}
+
 .company{
     font-size: 13px;
     position: relative;
@@ -121,6 +119,12 @@ li:hover{
 .company-box p{
     width: 4rem;
     margin: 1rem auto;
+}
+.features{
+    font-size: 12px;
+    position: relative;
+    right: 30rem;
+    top: 1.5rem;
 }
 .features-container{
     position: absolute;
@@ -291,35 +295,59 @@ li:hover{
     .hero--img{
         margin-bottom: 2rem;
     }
-    .nav-list,
-    .home-two,
-    .nav-btn{
+    .home-two, .nav-btn{
         display: none;
+    }
+    .nav-btn{
+        position: relative;
     }
     .nav-list{
         display: flex;
-        justify-content: space-around;
-        position: absolute;
+        justify-content: space-evenly;
+        position: fixed;
         right: -100%;
-        top: 5rem;
+        top: 0;
         gap: 0;
         background-color: #fff;
-        width: 100%;
-        height: 30rem;
+        width: 18rem;
+        height: 100%;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
         transition: .5s;
-        z-index: 1;
-        border: 1px solid #000;
+        padding-left: 0;
+
     }
     .nav-list.active{
         right: 0;
     }
+    .features-container{
+        position: relative;
+        padding: 13px;
+        width: 8rem;
+        display: block;
+    }
+    .features{
+        font-size: 12px;
+        position: fixed;
+        right: 12rem;
+        top: 5rem;
+        
+    }
+    .company{
+        position: fixed;
+        top: 16rem;
+        right: 12rem;
+    }
+    .company-container{
+        position: relative;
+        width: 8rem;
+    }
     
-    .menu,
     .mobile-img,
     .brand{
+        display: block;
+    }
+    .menu{
+        z-index: 8888;
         display: block;
     }
 }
