@@ -15,16 +15,19 @@ body{
     align-items: center;
     justify-content: space-between;
     height: 5rem;
+    width: 100%;
 }
 .brand{
     font-size: 2rem;
 }
+
 .nav-list{
     display: flex;
     align-items: center;
     list-style: none;
     justify-content: space-between;
 }
+
 .nav-list li{
     margin: 0 1.5rem;
     color: hsl(0, 0%, 41%);
@@ -44,6 +47,10 @@ li:hover{
     height: 7px;
     margin-left: 8px;
 }
+.brand-container{
+
+    margin-left: 1.5rem;
+}
 .nav-container{
     display: flex;
     justify-content: space-between;
@@ -55,8 +62,11 @@ li:hover{
 .nav{
     display: flex;
     align-items: center;
-    margin-left: 1.5rem;
+    justify-content: space-between;
+
+    width: 100%;
 }
+
 .nav-btn{
     display: flex;
     align-items: center;
@@ -64,6 +74,7 @@ li:hover{
 
 .nav-btn button{
     margin-right: 1.5rem;
+
 }
 .menu{
     margin-right: 2rem;
@@ -72,6 +83,7 @@ li:hover{
 .burger{
     cursor: pointer;
 }
+
 .btn{
     height: 2.2rem;
     width: 5.5rem;
@@ -100,7 +112,7 @@ li:hover{
     font-size: 13px;
     position: relative;
     top: 1.5rem;
-    right: 18rem;
+    right: 75rem;
 }
 .company-container{
     position: absolute;
@@ -123,7 +135,7 @@ li:hover{
 .features{
     font-size: 12px;
     position: relative;
-    right: 30rem;
+    right: 85rem;
     top: 1.5rem;
 }
 .features-container{
@@ -193,6 +205,7 @@ li:hover{
     color: #000;
 
 }
+
 .main-hero{
     display: flex;
     padding: 3rem;
@@ -273,6 +286,12 @@ li:hover{
 
 }
 @media screen and (max-width: 870px) {
+    html, body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
     .home-container{
         flex-direction: column-reverse;
         width: 60rem;
@@ -295,13 +314,20 @@ li:hover{
     .hero--img{
         margin-bottom: 2rem;
     }
-    .home-two, .nav-btn{
+    .home-two{
         display: none;
+    }
+    .nav-btn button{
+        margin: 0 .5rem;
     }
     .nav-btn{
         position: relative;
     }
-    .nav-list{
+    .menu{
+        position: fixed;
+        right: 0;
+    }
+    .nav{
         display: flex;
         justify-content: space-evenly;
         position: fixed;
@@ -313,10 +339,18 @@ li:hover{
         height: 100%;
         flex-direction: column;
         transition: .5s;
-        padding-left: 0;
-
     }
-    .nav-list.active{
+    .nav-list{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: start;
+        height: 80%;
+        padding-left: 0;  
+    }
+    .nav-list li{
+        margin: 0;
+    }
+    .nav.active{
         right: 0;
     }
     .features-container{
