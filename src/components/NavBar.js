@@ -101,6 +101,8 @@ const NavBar = () =>{
         }
     })
     return(
+        <>
+
         <nav className="main-nav" >
             <div className='nav-container' ref={menuRef} >
                 <div className='brand-container'>
@@ -113,6 +115,8 @@ const NavBar = () =>{
                             <li className='dropdown' onClick={() => setcompanyDropDown(!companyDropDown)}>Company <img className='dropdown-icon' src={!companyDropDown ? arrowDown : arrowUp} alt="dropdown"/></li>
                             <li>Careers</li>
                             <li>About</li>
+                            <FeaturesToggle featuresDropDown={featuresDropDown}/>
+        <CompanyToggle companyDropDown={companyDropDown}/>
                     </ul>
                     <div className="nav-btn">
                         <button  className="btn">Login</button>
@@ -126,9 +130,10 @@ const NavBar = () =>{
                     <img className='burger' onClick={() => setmenuToggle(!menuToggle )} src={menuToggle ? close : menu} alt='menu'/>
                 </div>
             </div>
-                <FeaturesToggle featuresDropDown={featuresDropDown}/>
-                <CompanyToggle companyDropDown={companyDropDown}/>
+                
         </nav>
+
+        </>
     )
 }
 
